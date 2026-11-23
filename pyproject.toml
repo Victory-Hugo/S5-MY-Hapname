@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "my-hapname"
+version = "1.0.0"
+description = "Query and standardize human mtDNA haplogroup nomenclature (Mitotree / PhyloTree)"
+readme = "README.md"
+license = { text = "MIT" }
+requires-python = ">=3.8"
+
+[project.urls]
+Homepage = "https://github.com/Victory-Hugo/S5-MY-Hapname"
+
+[project.scripts]
+my_hapname = "my_hapname:_cli"
+
+[tool.setuptools]
+py-modules = ["my_hapname"]

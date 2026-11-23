@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+
+MY_HAPNAME_DIR="$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")" && pwd)"
+exec python3 "$MY_HAPNAME_DIR/my_hapname.py" "$@"
